@@ -1,12 +1,14 @@
-import React from 'react'
-import HeroSection from '../components/pages/home/HeroSection'
+import React from "react";
+import HeroSection from "../components/pages/home/HeroSection";
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <HeroSection />
-    </div>
-  )
-}
+    <section className="hero">
+      <div className="container">
+        <HeroSection />
+      </div>
+    </section>
+  );
+};
 
-export default Home
+export default Home;

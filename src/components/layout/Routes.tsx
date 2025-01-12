@@ -14,19 +14,17 @@ const routes = [
         element: <Home />,
       },
       {
-        path: "notes",
+        path: "note",
         element: <Note />,
         children: [
           {
             path: ":id",
-            element: <Note />
-          }
-        ]
+            element: <Note />,
+          },
+        ],
       },
-    ]
+    ],
   },
-
-
-]
+];
 
 export default routes;
