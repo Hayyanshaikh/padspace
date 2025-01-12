@@ -1,23 +1,31 @@
 import Home from "../../pages/Home";
 import NotFound from "../../pages/NotFound";
 import Note from "../../pages/Note";
+import Layout from "./Layout";
 
 const routes = [
   {
     path: "/",
-    element: <Home />,
-    errorElement: <NotFound />
-  },
-  {
-    path: "notes",
-    element: <Note />,
+    element: <Layout />,
+    errorElement: <NotFound />,
     children: [
       {
-        path: ":id",
-        element: <Note />
-      }
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "notes",
+        element: <Note />,
+        children: [
+          {
+            path: ":id",
+            element: <Note />
+          }
+        ]
+      },
     ]
   },
+
 
 ]
 
