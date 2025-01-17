@@ -6,7 +6,7 @@
   command = "npm run build"
   
   # Set the directory to publish your build files (e.g., `dist`, `build`)
-  publish = "build"
+  publish = "dist"
   
   # If you need to install specific dependencies
   # environment = { "NODE_VERSION" = "14" }
