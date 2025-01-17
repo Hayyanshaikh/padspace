@@ -43,7 +43,7 @@ const NoteUpdate: React.FC = () => {
   return (
     <section>
       <div className="container">
-        <NoteForm noteId={id} form={form} isUpdate={true} onFinish={handleFinish} />
+        <NoteForm showCopy={true} noteId={id} form={form} isUpdate={true} onFinish={handleFinish} />
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import { useForm } from "antd/es/form/Form";
 import api from "../api";
 import NoteForm from "../components/pages/note/NoteForm";
 import { useNavigate } from "react-router-dom";
-import { Modal, Button } from "antd"; // Import Modal and Button from Ant Design
+import { Modal } from "antd"; // Import Modal and Button from Ant Design
 import CommonButton from "../components/common/CommonButton";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 
