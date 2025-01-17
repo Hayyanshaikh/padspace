@@ -1,0 +1,17 @@
+[build]
+  # Set the base directory if needed, e.g., for a subfolder setup
+  # base = "subfolder"
+  
+  # Specify the build command
+  command = "npm run build"
+  
+  # Set the directory to publish your build files (e.g., `dist`, `build`)
+  publish = "build"
+  
+  # If you need to install specific dependencies
+  # environment = { "NODE_VERSION" = "14" }
+
+[context.production.environment]
+  # Set environment variables for production
+  NODE_ENV = "production"
+  API_URL = "https://6781237b85151f714b098b06.mockapi.io"
