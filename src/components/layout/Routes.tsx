@@ -1,6 +1,7 @@
 import Home from "../../pages/Home";
 import NotFound from "../../pages/NotFound";
 import Note from "../../pages/Note";
+import NoteUpdate from "../../pages/NoteUpdate";
 import Layout from "./Layout";
 
 const routes = [
@@ -16,12 +17,10 @@ const routes = [
       {
         path: "note",
         element: <Note />,
-        children: [
-          {
-            path: ":id",
-            element: <Note />,
-          },
-        ],
+      },
+      {
+        path: "note/:id",
+        element: <NoteUpdate />,
       },
     ],
   },
